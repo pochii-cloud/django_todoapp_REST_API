@@ -1,0 +1,20 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="DjangoCloseTagInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="polls.views.question" />
+          <option value="polls.views.Question_id" />
+          <option value="polls.views.template" />
+          <option value="polls.views.ChoiceDoesNotExist" />
+          <option value="polls.views.keyError" />
+          <option value="polls.views.choice" />
+          <option value="polls.tests.time" />
+          <option value="polls.tests.self" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

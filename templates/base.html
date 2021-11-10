@@ -1,0 +1,31 @@
+{% load static %}
+<html>
+<head>
+<title>to do app</title>
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+           <form class="d-flex" method="POST">
+          {% csrf_token %}
+        <input class="form-control me-2" type="search" placeholder="add to do item" aria-label="Search" name="item">
+        <button class="btn btn-outline-secondary" type="submit">Add to list</button>
+      </form>
+
+{#    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">#}
+{#      <span class="navbar-toggler-icon"></span>#}
+{#    </button>#}
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<br>
+ {% block content %}
+
+ {% endblock %}
+</body>
+</html>
